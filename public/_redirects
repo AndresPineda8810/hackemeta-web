@@ -1,1 +1,25 @@
 
+# HACKE META — _redirects v5.0 APOLO WHITE — Cloudflare Pages — $10M
+# FIX dotfolder .well-known — Cloudflare no sirve dotfolders sin redirect
+
+# .well-known fix — sirve security.txt en ambas rutas
+/.well-known/security.txt /security.txt 200
+/security.txt /security.txt 200
+
+# Trust Center — rutas bonitas /privacy → archivo real .html — SEO + Google Play
+/privacy-policy /privacy-policy.html 200
+/privacy /privacy-policy.html 200
+/terms /terms.html 200
+/delete-account /delete-account.html 200
+/wallet /wallet.html 200
+/affiliate /affiliate.html 200
+/millonario /millonario.html 200
+/ev-biometric /ev-biometric.html 200
+/child-safety /child-safety.html 200
+/ev /ev-biometric.html 200
+/mensaje / 200
+/marketall / 200
+/exportall / 200
+
+# SPA fallback — tu app principal
+/ /index.html 200
