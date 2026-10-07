@@ -1,0 +1,14 @@
+# HACKE META PLATFORMS INC. S.A.S. - Hall of Fame
+# https://hackemeta.app/.well-known/thanks.txt
+
+We would like to thank the following security researchers who have
+responsibly disclosed vulnerabilities to us:
+
+- Your name could be here! Report to security@hackemeta.app
+- PGP Encrypted reports preferred: https://hackemeta.app/.well-known/pgp-key.txt
+
+Last updated: 2026-10-07
+Contact: security@hackemeta.app
+Policy: https://hackemeta.app/security-policy
+
+Thank you for helping us keep HACKE META secure!

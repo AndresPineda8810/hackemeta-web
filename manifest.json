@@ -1,0 +1,67 @@
+{
+  "name": "HACKE META PLATFORMS INC. S.A.S. — Trust Center v5.0 APOLO WHITE",
+  "short_name": "HACKE META Trust",
+  "description": "Trust Center v5.0 APOLO WHITE — Privacy Policy + Terms + eV EYES VISION™ BIPA/GDPR + Delete Account Google Play 100% + Child Safety COPPA 13+ — User Secure, Message tipo WhatsApp TLS 1.3 AES-256-GCM StrongBox, Pagos Seguros Stripe PCI-DSS L1 FinCEN, Compras Seguras MARKETALL B2C 48h + EXPORTALL B2B 195 países, eV 4 factores retina 256pts + blink + saccades + gaze code 4 °°°° 262K combos StrongBox, Wallet balance_dinero + balance_puntos 100pts=$1, Anti-Espionaje $10M Fiscalía + UAFE + FBI IC3 + WIPO + Consulado USA MLAT — Secure for Everyone — Buffet $10M Wilson Sonsini/Cooley",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcfcf9",
+  "theme_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es-EC",
+  "dir": "ltr",
+  "categories": ["business", "security", "finance", "shopping", "social"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Privacy Policy v5.0",
+      "short_name": "Privacy",
+      "description": "Privacy Policy v5.0 APOLO WHITE — GDPR Art.9 + BIPA + LOPDP + CCPA + PCI-DSS L1 — eV 100% on-device StrongBox",
+      "url": "/privacy-policy",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Terms of Service v5.0",
+      "short_name": "Terms",
+      "description": "Terms v5.0 $10M Buffet — Usuario + Mensaje + Wallet NOT A BANK + MARKETALL + EXPORTALL + Anti-Espionaje Super Entidades",
+      "url": "/terms",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "eV EYES VISION™ Disclosure",
+      "short_name": "eV",
+      "description": "eV EYES VISION™ — Retina 256pts + Blink + Saccades 300-500°/s + Gaze Code 4 °°°° 262K combos — BIPA §15 + GDPR Art.9 — 100% on-device StrongBox",
+      "url": "/ev-biometric",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Delete Account — Google Play 100%",
+      "short_name": "Delete",
+      "description": "Delete Account v5.0 — In-App 30s + Web 48h SLA — Firebase Auth deleteUser() + Stripe cus_xxx delete + SHA256 certificate — No dark patterns",
+      "url": "/delete-account",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Child Safety — COPPA 13+",
+      "short_name": "Child Safety",
+      "description": "Child Safety v5.0 — COPPA 13+ • EU DSA Art.28 • NCMEC 2258A • COIP Art.103 • Zero Tolerance CSAM • FBI IC3 • WIPO",
+      "url": "/child-safety",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Super-App Primary — Trust Center v5.0 APOLO WHITE -->
+  <url><loc>https://hackemeta.app/</loc><lastmod>2026-10-07</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://hackemeta.app/marketall</loc><lastmod>2026-10-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://hackemeta.app/exportall</loc><lastmod>2026-10-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://hackemeta.app/ev</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://hackemeta.app/mensaje</loc><lastmod>2026-10-07</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  
+  <!-- Legal Pack $10M — 9 Docs — Google Play Compliant — APOLO WHITE — como guardado -->
+  <url><loc>https://hackemeta.app/privacy-policy.html</loc><lastmod>2026-10-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hackemeta.app/terms.html</loc><lastmod>2026-10-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hackemeta.app/ev-biometric.html</loc><lastmod>2026-10-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hackemeta.app/delete-account.html</loc><lastmod>2026-10-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hackemeta.app/affiliate.html</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hackemeta.app/millonario.html</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hackemeta.app/wallet.html</loc><lastmod>2026-10-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hackemeta.app/child-safety.html</loc><lastmod>2026-10-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hackemeta.app/.well-known/security.txt</loc><lastmod>2026-10-07</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+</urlset>

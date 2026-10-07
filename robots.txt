@@ -1,0 +1,84 @@
+# HACKE META PLATFORMS INC. S.A.S. - robots.txt v5.0 APOLO WHITE - $10M - Secure for Everyone
+# Super-App: hackemeta.app - marketall - exportall - eV Eyes Vision
+# Trust Center v5.0: Legal, biometry and compliance — 9 Docs Google Play Compliant
+
+User-agent: *
+Allow: /
+Allow: /privacy-policy.html
+Allow: /terms.html
+Allow: /ev-biometric.html
+Allow: /delete-account.html
+Allow: /wallet.html
+Allow: /affiliate.html
+Allow: /millonario.html
+Allow: /child-safety.html
+Allow: /marketall
+Allow: /exportall
+Allow: /ev
+Allow: /mensaje
+Allow: /.well-known/security.txt
+Allow: /manifest.json
+Allow: /sitemap.xml
+Allow: /favicon-32.png
+Allow: /favicon-16.png
+Allow: /apple-touch-icon.png
+Allow: /icon-192.png
+Allow: /icon-512.png
+
+# Block sensitive - backend, api, admin, wallet movements, eV biometrics - never index
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/internal/
+Disallow: /wallet/movements/
+Disallow: /ev/biometric/
+Disallow: /ev/retina/
+Disallow: /auth/
+Disallow: /stripe/webhook/
+Disallow: /firebase/
+Disallow: /private/
+Disallow: /*.env
+Disallow: /*.git/
+Disallow: /cupones/empresas/
+Disallow: /coupons/
+
+# Anti-scraping - protect eV, cupones, affiliate, millonario - anti-espionaje $10M
+Disallow: /*?*code=
+Disallow: /*?*token=
+Disallow: /*?*cus_xxx
+Disallow: /*?*pm_xxx
+Disallow: /*?*pi_xxx
+Disallow: /*?*coupon=
+Disallow: /*?*affiliate_id=
+Disallow: /*?*balance_
+Disallow: /*?*wallet_
+
+# Anti-AI scrapers stealing biometric IP + cupones farm — Buffet Protection
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+
+# Google Play, Bing, Meta compliance — must crawl policies v5.0
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: facebookexternalhit
+Allow: /
+
+# Sitemap — 9 legales + super-app — v5.0 APOLO WHITE
+Sitemap: https://hackemeta.app/sitemap.xml
+
+# Crawl-delay for anti-bot — prevent farm likes/coupons
+Crawl-delay: 2
+
+# Canonical host
+Host: https://hackemeta.app

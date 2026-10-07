@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eV EYES VISION v5.0 — Privacy & Biometric Disclosure — HACKE META</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--bg2:#f0f2f5;--line:#dddfe2;--line2:#e4e6eb;--ink:#050505;--muted:#65676b;--blue:#0064E0;--blue2:#e7f3ff;--cyan:#0d7a8a;--cyanBg:#e6f6f8;--gold:#7a5d00;--goldBg:#fff8d5;--red:#b91c1c;--redBg:#ffebe9;--green:#0a7a42;--greenBg:#e6f4ea}
+*{box-sizing:border-box;margin:0;padding:0}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,'SF Pro Display',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--blue);text-decoration:none;font-weight:500}a:hover{text-decoration:underline}
+.topbar{height:60px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 24px;position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);z-index:100}
+.logo{font-weight:800;letter-spacing:-.04em;font-size:20px}.logo span{color:var(--blue)}
+.lang{display:flex;gap:6px;background:var(--bg2);padding:4px;border-radius:999px}.lang button{border:0;background:transparent;padding:6px 14px;border-radius:999px;font-weight:700;font-size:12px;cursor:pointer;color:var(--muted)}.lang button.active{background:var(--ink);color:#fff}
+.layout{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:260px 1fr;gap:0}
+@media(max-width:980px){.layout{grid-template-columns:1fr}.sidebar{display:none}}
+.sidebar{position:sticky;top:60px;height:calc(100vh - 60px);overflow:auto;padding:24px 12px 24px 24px;border-right:1px solid var(--line2)}
+.sidebar h4{font-size:11px;letter-spacing:.1em;color:var(--muted);margin:18px 0 8px;text-transform:uppercase}
+.sidebar a{display:block;padding:8px 10px;border-radius:8px;font-size:13px;color:var(--muted);font-weight:500}.sidebar a:hover{background:var(--bg2);color:var(--ink)}
+.content{padding:40px 48px 96px;max-width:920px}
+.badge{display:inline-flex;background:var(--bg2);border:1px solid var(--line2);padding:6px 12px;border-radius:999px;font-size:11px;font-weight:700;color:var(--muted);margin:0 6px 8px 0}
+.badge-blue{background:var(--blue2);border-color:#c4dbff;color:var(--blue)} .badge-cyan{background:var(--cyanBg);border-color:#b8e6ea;color:var(--cyan)} .badge-gold{background:var(--goldBg);border-color:#f5e6a0;color:var(--gold)} .badge-green{background:var(--greenBg);border-color:#b7e4c7;color:var(--green)} .badge-red{background:var(--redBg);border-color:#ffccc7;color:var(--red)}
+h1{font-size:52px;line-height:.9;letter-spacing:-.05em;font-weight:800;margin:16px 0 12px} .dot{color:var(--blue)}
+.sub{font-family:'Source Serif 4',serif;font-size:18px;color:var(--muted);line-height:1.5;max-width:760px}
+h2{font-size:22px;letter-spacing:-.02em;font-weight:700;margin:56px 0 14px;padding-top:24px;border-top:1px solid var(--line2)} h3{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700;margin:28px 0 10px}
+p,li{font-size:15px;color:#1c1e21} li{margin:8px 0} ul,ol{padding-left:20px}
+.card{border:1px solid var(--line2);border-radius:16px;padding:20px;margin:20px 0;background:#fff}
+.card-blue{border-color:#c4dbff;background:var(--blue2)} .card-cyan{border-color:#b8e6ea;background:var(--cyanBg)} .card-gold{background:#fffbeb;border-color:#fde68a} .card-red{background:#fff5f5;border-color:#fecaca} .card-green{background:#f0faf4;border-color:#b7e4c7}
+.mono{font-family:ui-monospace,monospace;background:var(--bg2);padding:2px 6px;border-radius:6px;font-size:12.5px;border:1px solid var(--line2)}
+.table{width:100%;border-collapse:collapse;margin:16px 0;border-radius:12px;border:1px solid var(--line2);overflow:hidden} .table th{background:var(--bg2);text-align:left;font-size:11px;letter-spacing:.08em;color:var(--muted);padding:12px;text-transform:uppercase} .table td{padding:14px 12px;font-size:13.5px;border-top:1px solid var(--line2);vertical-align:top}
+.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0} .kpi div{background:var(--bg2);border:1px solid var(--line2);border-radius:16px;padding:16px;text-align:center} .kpi b{font-size:26px;display:block;font-weight:800} .kpi span{font-size:12px;color:var(--muted)} @media(max-width:700px){.kpi{grid-template-columns:1fr 1fr}}
+.code{background:#f8fafc;border:1px solid var(--line2);border-radius:12px;padding:16px;font-family:ui-monospace,monospace;font-size:12px;color:#334155;margin:14px 0;line-height:1.6;overflow:auto}
+[data-lang]{display:none} [data-lang].show{display:block}
+.muted{color:var(--muted)}
+</style>
+<script>
+function setLang(l){document.documentElement.lang=l;document.querySelectorAll('[data-lang]').forEach(e=>e.classList.toggle('show',e.dataset.lang===l));document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('active',b.dataset.set===l));localStorage.setItem('hm_lang',l)}
+window.onload=()=>setLang(localStorage.getItem('hm_lang')||'es');
+</script>
+</head>
+<body>
+
+<div class="topbar"><div class="logo">HACKE <span>META</span> • eV</div><div style="display:flex;gap:16px;align-items:center"><span class="muted" style="font-size:12px;font-weight:600">v5.0 APOLO WHITE • LIVE</span><div class="lang"><button data-set="es" onclick="setLang('es')">ES</button><button data-set="en" onclick="setLang('en')">EN</button></div></div></div>
+
+<div class="layout">
+<aside class="sidebar">
+<h4>eV EYES VISION</h4>
+<a href="#def">Definición • Definition</a><a href="#anti-fraud">Anti-Fraude Pagos</a><a href="#anti-foto">Anti-Foto Indecente</a><a href="#login">Login Rápido</a><a href="#vs">eV vs Face ID</a><a href="#tech">Arquitectura StrongBox</a><a href="#legal">Legal BIPA / GDPR</a>
+<h4>Legal</h4>
+<a href="/privacy-policy">Privacy Policy</a><a href="/child-safety">Child Safety</a><a href="/.well-known/security.txt">security.txt</a>
+</aside>
+
+<main class="content">
+<div><span class="badge">HACKE META PLATFORMS INC. S.A.S.</span><span class="badge badge-cyan">RETINA • BLINK • SACCADES • LIVENESS >0.95</span><span class="badge badge-gold">CÓDIGO 4 °°°° 262K COMBOS • STRONGBOX</span><span class="badge badge-green">ON-DEVICE ONLY • GDPR Art.9 • BIPA • LOPDP</span><span class="badge badge-red">ANTI-FRAUDE • FISCALÍA • FBI IC3</span></div>
+
+<!-- ESPAÑOL -->
+<div data-lang="es" class="show">
+<h1>eV EYES VISION<span class="dot">™</span></h1>
+<p class="sub">El futuro no es Face ID, es eV. Clave con retina ocular + parpadeo + movimiento de ojos + código inhackeable 4 °°°° con eV. Datos protegidos, intransferibles, inclonables. Biometric grade $10M.</p>
+
+<div class="kpi"><div><b>4</b><span>Factores biométricos</span></div><div><b>262K</b><span>Combos 4 °°°°</span></div><div><b>>0.95</b><span>Liveness score</span></div><div><b>0</b><span>Datos en servidor</span></div></div>
+
+<div id="def" class="card card-cyan">
+<h3 style="margin-top:0">Definición buffet $10M nivel META — eV EYES VISION</h3>
+<p><b>eV</b> es autenticación ocular cuádruple patent-pending, diseñada para prevenir fraudes de cobros/pagos y fotos indecentes.<br><br>
+<b>1. Retina Ocular:</b> 256 puntos vasos sanguíneos retina únicos con cámara frontal + ML on-device. No es iris, es retina interna con flujo de sangre.<br>
+<b>2. Parpadeo Liveness:</b> 2 parpadeos voluntarios en 3s, velocidad cierre 100-400ms única. Anti-foto, anti-video, anti-máscara 3D, anti-deepfake.<br>
+<b>3. Movimiento Ojos — Saccades:</b> Mira arriba/abajo/izq/der aleatorio. Trackea velocidad 300-500°/s, latencia única. No replicable por IA.<br>
+<b>4. Código Inhackeable 4 °°°° — Gaze Code:</b> No es PIN 1234. Miras 4 puntos secretos °°°° en orden que solo tú sabes (ej: ° arriba-izq, ° centro, ° abajo-der, ° arriba-der). 4^9 = 262,144 combos + biometría.<br><br>
+<b>Almacenado:</b> Template retina + saccades + gaze code hash NUNCA sale del device. Solo Android Keystore StrongBox HSM + AES-256-GCM + salt. No sube a Firebase ni a terceros. GDPR Art.9(2)(a) + BIPA 740 ILCS 14 + LOPDP Art.23.</p>
+</div>
+
+<h2 id="anti-fraud">1. Anti-Fraude Pagos — “Yo no hice ese pago”</h2>
+<div class="card card-gold">
+<p><b>Problema:</b> “Me clonaron tarjeta, me robaron cuenta”. En apps con contraseña no puedes probar quién pagó.</p>
+<p><b>Solución eV:</b> CheckoutUniversal > <span class="mono">¿Pagar con eV 👁️ Más seguro?</span> > Retina 256pts + parpadeo 2x + saccades aleatorias + código 4 °°°° > Verificación on-device retina >0.98 + liveness >0.95 + gaze hash + Play Integrity PLAY_RECOGNIZED.</p>
+<p>Si pasa: <span class="mono">wallet_movements ev_verified=true, retina_hash SHA256, liveness 0.98, gaze_code_hash, device_id, IP, audit_hash cadena custodia</span> + Stripe pi_xxx + factura SRI + Buyer Protection 48h.</p>
+<p><b>Por qué nadie puede negar:</b> Retina necesita ojo vivo con flujo sangre. Parpadeo voluntario + saccades no replicables. Código mirada secreto solo tú sabes. Log forense SHA256 para Fiscalía Art.186 estafa, UAFE, SRI + Stripe FinCEN, FTC, FBI IC3.gov, DOJ vía MLAT, WIPO, Consulado USA vía DOJ/MLAT que puede derivar en deportación INA §237 si fraude visa. 3 fallos = bloqueo 24h + wallet freeze.</p>
+<div class="code">wallet_movements { user_id: usr_9x.., tx_id: tx_ev_.., motivo: compra MARKETALL $500, ev_verified: true, retina_hash: sha256:a1b2.., liveness: 0.98, saccades_hash: sha256:sac.., gaze_code_hash: sha256:gaze_4°°°°.., device_id: dev.., play_integrity: PLAY_RECOGNIZED, audit_hash: SHA256 chain, stripe_pi_id: pi_.., buyer_protection: 48h }</div>
+</div>
+
+<h2 id="anti-foto">2. Anti-Foto Indecente — “Yo no subí esa foto” — Solo el usuario podrá subir fotos seguras con eV</h2>
+<div class="card card-red">
+<p><b>Problema:</b> Suben NSFW, desnudo, CSAM, spam. Luego dicen “me hackearon”.</p>
+<p><b>Solución:</b> Settings > Privacy > eV > “Seguridad eV para subir fotos 👁️” > Cada subida pide eV rápido: parpadeo 1x + código 4 °°°° (2s) > liveness >0.95 + gaze correcto > Upload Storage + AI NSFW. Si NSFW >0.9 o CSAM > Ban + delete account + audit_log eV proof + reporte auto Fiscalía COIP Art.173/103 + 18 U.S.C. §2258A NCMEC + FBI IC3 + WIPO.</p>
+<p><b>Solo el usiario puede subir:</b> Sin ojo vivo + orden secreta 4 °°°°, nadie con teléfono desbloqueado puede subir a su cuenta. Face ID se clona con máscara $150, eV no. Protege usuario, creador, vendedor, exportador,comprador. Cumple COPPA, EU DSA Art.9.</p>
+</div>
+
+<h2 id="login">3. Login Rápido y Seguro — Sin Recuperar Cuenta</h2>
+<div class="card card-green">
+<p><b>Problema:</b> Cierras sesión sin querer, borras cache, cambias teléfono, pierdes OTP, fricción.</p>
+<p><b>Solución:</b> Enroll 30s: retina + parpadeo 2x + ojos arriba/abajo/izq/der + código 4 °°°° > Guardado StrongBox.<br>Login: botón grande <span class="mono">👁️ Entrar rápido y seguro con eV — Sin recuperar cuenta</span> > retina + blink + saccades + 4 °°°° (3s) > Firebase custom token StrongBox + Play Integrity PLAY_RECOGNIZED > Entras directo a Mensaje, Wallet <span class="mono">balance_dinero + balance_puntos 100pts=$1</span>, MARKETALL/EXPORTALL 195 países, eV QR, Millonario, Gift & Love, cupones, afiliado.</p>
+</div>
+
+<h2 id="vs">4. eV vs Face ID — Comparativa $10M</h2>
+<table class="table"><tr><th>Face ID (Apple)</th><th>eV EYES VISION (HACKE META)</th></tr>
+<tr><td>1 factor cara</td><td><b>4 factores:</b> retina 256pts + parpadeo + saccades 300-500°/s + código 4 °°°° 262k combos</td></tr>
+<tr><td>Clonable máscara 3D $150, foto, deepfake</td><td><b>Inclonable:</b> retina viva flujo sangre + parpadeo voluntario + saccades únicas + código secreto</td></tr>
+<tr><td>Template Secure Enclave pero cara pública</td><td><b>Solo StrongBox HSM AES-256-GCM + salt + nunca server + nunca terceros</b> — GDPR Art.9, BIPA, LOPDP</td></tr>
+<tr><td>Solo desbloquea teléfono</td><td>Desbloquea wallet >$100, compras >$500, cupones >$50 QR HMAC-SHA256, jackpot >$500, afiliado >$1000, mensaje, fotos, login rápido — con prueba forense audit_log</td></tr>
+<tr><td>No prueba “yo no fui”</td><td><b>Prueba forense:</b> retina_hash SHA256 + liveness + saccades_hash + gaze_code_hash + device_id + Play Integrity + IP + timestamp + audit_hash para Fiscalía, UAFE, FBI IC3, WIPO, Consulado USA MLAT deportación INA §237</td></tr>
+</table>
+
+<h2 id="tech">5. Arquitectura Técnica — On-Device — StrongBox — Anti-Spoofing</h2>
+<div class="card">
+<p><b>ML On-Device:</b> ML Kit Face + TFLite retina segmentation + eye tracking saccades + liveness blink — no cloud.<br>
+<b>StrongBox:</b> Android Keystore StrongBox hardware-backed (Titan M, Knox) — no extraíble, no root, no backup.<br>
+<b>AES-256-GCM:</b> EncryptedSharedPreferences + key StrongBox + salt único + SHA256 hash.<br>
+<b>Play Integrity + App Check:</b> Cada verificación pide PLAY_RECOGNIZED — previene APK clonada, emulador, rooted.<br>
+<b>Liveness >0.95:</b> 2 parpadeos + saccades aleatorias + depth + blood flow + micro-pupila. Foto/video/máscara = <0.5 rechazado.<br>
+<b>Gaze Code 4 °°°°:</b> Pantalla 3x3 puntos °, dwell 300ms, hash con salt StrongBox, 3 intentos = bloqueo 24h.<br>
+<b>Audit Log:</b> retina_hash, liveness_score, saccades_hash, gaze_code_hash, intentos, device_id, IP, Play Integrity, timestamp, SHA256 cadena custodia.<br>
+<b>Revocable:</b> Settings > eV > Desactivar > borrado StrongBox + certificado SHA256 + eV_enrolled=false.<br>
+<b>Privacidad:</b> NUNCA sale device, nunca Firebase, nunca terceros. Solo hash. Retención hasta revocación o delete-account — borrado criptográfico.</p>
+</div>
+
+<h2 id="legal">6. Legal Biométrico — GDPR Art.9 + BIPA + LOPDP + Anti-Espionaje</h2>
+<div class="card card-red">
+<p><b>GDPR Art.9(2)(a) + LOPDP Art.23 + BIPA 740 ILCS 14:</b> Retina, parpadeo, saccades, gaze code son sensibles. Solo con consentimiento explícito separado, revocable. Template NUNCA sale device.<br><br>
+<b>Prohibición Clonación Mundial:</b> Clonar, spoofear, deepfake, máscara, foto, video para bypass eV = COIP Art.232 + BIPA $1000-$5000 + ECPA §2511 + CFAA §1030 + COIP Art.208A + DMCA §1201.<br><br>
+<b>Protocolo Anti-Espionaje Internacional — Super Entidades:</b> a) Preservación forense SHA256, b) Denuncia Fiscalía Ecuador Art.186/232/208A/173/103 + UAFE/ARCOTEL/SRI/Super Datos, c) FBI IC3.gov + FTC + NCMEC 2258A + Stripe FinCEN + MLAT Ecuador-USA 1985 a DOJ/FBI Cyber/HSI vía Consulado USA Guayaquil MLAT/RSO — si visa fraud 18 U.S.C. §1546 puede derivar deportación INA §237 (decide autoridad USA), d) WIPO/OMPI + DMCA + BIPA takedown, e) Wallet freeze, forfeiture, ban, demanda $500k, reporte migratorio. Segura para todo mundo. El futuro no es Face ID, es eV. Gloria al Rey.</p>
+</div>
+
+</div>
+
+<!-- ENGLISH -->
+<div data-lang="en">
+<h1>eV EYES VISION<span class="dot">™</span></h1>
+<p class="sub">The future is not Face ID, it's eV. Retina + blink + eye movement + unhackable 4 °°°° gaze code. Protected, non-transferable, unclonable. Biometric grade $10M.</p>
+<div class="kpi"><div><b>4</b><span>Biometric factors</span></div><div><b>262K</b><span>4 °°°° combos</span></div><div><b>>0.95</b><span>Liveness</span></div><div><b>0</b><span>Server data</span></div></div>
+<div class="card card-cyan"><h3 style="margin-top:0">$10M Buffet Definition — META level</h3><p><b>eV</b> is quadruple ocular auth patent-pending to prevent payment fraud and indecent photo uploads. <b>1. Retina:</b> 256pt vessel map + ML on-device. <b>2. Blink Liveness:</b> 2 voluntary blinks 3s, 100-400ms. Anti-photo/video/mask/deepfake. <b>3. Saccades:</b> up/down/left/right random, 300-500°/s unique. <b>4. 4 °°°° Gaze Code:</b> Look 4 secret dots °°°° in order only you know. 4^9=262,144 combos. Stored only StrongBox HSM AES-256-GCM + salt, never server. GDPR Art.9(2)(a) + BIPA + LOPDP sensitive.</p></div>
+<h2>1. Anti-Fraud Payments — “I didn't make that payment”</h2><div class="card card-gold"><p>Checkout > Pay with eV 👁️ > Retina + blink + saccades + 4 °°°° > PLAY_RECOGNIZED > <span class="mono">wallet_movements ev_verified=true, retina_hash SHA256, audit_hash chain custody</span> + Stripe pi_xxx + SRI invoice + 48h Buyer Protection. Forensic proof for Fiscalía, UAFE, FBI IC3, WIPO, US Consulate via MLAT → removal INA §237 if visa fraud.</p></div>
+<h2>2. Anti-Indecent Photo — “I didn't upload that” — Only she can upload safe photos with eV</h2><div class="card card-red"><p>Settings > eV > “Secure upload with eV” > Every upload asks 1 blink + 4 °°°° (2s) > liveness >0.95 > Upload + AI NSFW. If NSFW >0.9 or CSAM > Ban + delete + eV proof audit_log + auto report Fiscalía COIP + NCMEC 2258A + FBI IC3. Without live eye + secret order, no one with unlocked phone can upload to her account. Face ID clone $150 mask, eV not.</p></div>
+<h2>3. Fast Secure Login — No account recovery</h2><div class="card card-green"><p>Enroll 30s > Store StrongBox. Login: 👁️ Fast secure login with eV — No recovery > Retina + blink + saccades + 4 °°°° 3s > Firebase custom token StrongBox + PLAY_RECOGNIZED > Direct to Message, Wallet balance_dinero + balance_puntos, MARKETALL/EXPORTALL 195 countries, eV QR, Millonario, Gift & Love, coupons, affiliate.</p></div>
+</div>
+
+<div style="margin-top:64px;padding-top:24px;border-top:1px solid var(--line2);text-align:center"><p class="muted" style="font-size:12px">© 2026 HACKE META PLATFORMS INC. S.A.S. — eV EYES VISION v5.0 APOLO WHITE — On-Device StrongBox AES-256-GCM — GDPR Art.9(2)(a) — BIPA 740 ILCS 14 — LOPDP Art.23 — Liveness >0.95 — Anti-Spoofing — 262K Gaze Code — Wallet balance_dinero + balance_puntos — MARKETALL B2C 48h — EXPORTALL B2B 195 FOB/CIF — Message TLS 1.3 AES-256-GCM — Millonario HACKE — Coupons QR HMAC-SHA256 — Affiliate marketall.com/h/user — Stripe PCI-DSS L1 FinCEN — SRI 7 years — UAFE — Fiscalía — ARCOTEL — FTC — DOJ/FBI MLAT — IC3.gov — WIPO — NCMEC 2258A — Consulado USA MLAT RSO — INA §237 — Secure for Everyone — Unhackable — Gloria al Rey — Built to End Wars</p></div>
+
+</main>
+</div>
+</body>
+</html>
