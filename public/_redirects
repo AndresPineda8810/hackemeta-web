@@ -1,23 +1,13 @@
-# HACKE META — _redirects v5.1 APOLO WHITE FIX — Cloudflare Pages
-# FIX dotfolder .well-known
-
-# .well-known — solo esta, sin loop
-/.well-known/security.txt  /.well-known/security.txt  200
-/.well-known/pgp-key.txt  /.well-known/pgp-key.txt  200
-
-# Trust Center — rutas bonitas
-/privacy-policy  /privacy-policy.html  200
 /privacy  /privacy-policy.html  200
+/privacy-policy  /privacy-policy.html  200
 /terms  /terms.html  200
+/terms.html  /terms.html  200
+/ev-biometric  /ev-biometric.html  200
+/ev-biometric.html  /ev-biometric.html  200
 /delete-account  /delete-account.html  200
 /wallet  /wallet.html  200
+/child-safety  /child-safety.html  200
 /affiliate  /affiliate.html  200
 /millonario  /millonario.html  200
-/ev-biometric  /ev-biometric.html  200
-/child-safety  /child-safety.html  200
-/ev  /ev-biometric.html  200
-
-# Páginas de app — llevan al home
-/mensaje  /index.html  200
-/marketall  /index.html  200
-/exportall  /index.html  200
+/.well-known/security.txt  /.well-known/security.txt  200
+/*  /index.html  200
