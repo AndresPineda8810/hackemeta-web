@@ -1,0 +1,13 @@
+Contact: mailto:security@hackemeta.app
+Contact: https://hackemeta.app/contact
+Expires: 2027-10-07T00:00:00.000Z
+Encryption: https://hackemeta.app/.well-known/pgp-key.txt
+Acknowledgments: https://hackemeta.app/.well-known/thanks.txt
+Preferred-Languages: es, en
+Canonical: https://hackemeta.app/.well-known/security.txt
+Policy: https://hackemeta.app/security-policy
+Hiring: https://hackemeta.app/careers
+
+# HACKE META PLATFORMS INC. S.A.S.
+# PGP Fingerprint: 9296 4AB5 897F 74D1 D076 57AD AFD5 B282 D538 246B
+# PGP ID: AFD5B282D538246B - RSA 4096 - Created 2026-10-07
