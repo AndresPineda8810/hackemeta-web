@@ -1,12 +1,12 @@
-# HACKE META _redirects v5.1 FIX - Cloudflare Pages
+# HACKE META _redirects v5.2 FINAL - FIX APOLO
 /privacy-policy /privacy-policy.html 200
 /privacy /privacy-policy.html 200
-/child-safety /child-safety.html 200
+/terms /terms.html 200
 /delete-account /delete-account.html 200
-/ev-biometric /ev-biometric.html 200
-/ev /ev-biometric.html 200
+/wallet /wallet.html 200
 /affiliate /affiliate.html 200
 /millonario /millonario.html 200
-
-# SPA fallback al final
+/ev-biometric /ev-biometric.html 200
+/child-safety /child-safety.html 200
+/ev /ev-biometric.html 200
 /* /index.html 200
