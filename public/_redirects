@@ -1,7 +1,7 @@
-# HACKE META _redirects v5.2 FINAL - FIX APOLO
+# HACKE META v6.0 FINAL - SIN LOOP
 /privacy-policy /privacy-policy.html 200
-/privacy /privacy-policy.html 200
 /terms /terms.html 200
+/privacy /privacy-policy.html 200
 /delete-account /delete-account.html 200
 /wallet /wallet.html 200
 /affiliate /affiliate.html 200
@@ -9,4 +9,4 @@
 /ev-biometric /ev-biometric.html 200
 /child-safety /child-safety.html 200
 /ev /ev-biometric.html 200
-/* /index.html 200
+/.well-known/security.txt /security.txt 200
